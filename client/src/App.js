@@ -6,7 +6,9 @@ import "./app.scss"
 function App() {
   return (
     <Routes>
+      {/* main routes */}
       <Route path="/" element={<Home />} />
+      {/* in-case user visits unknown page */}
       <Route path="*" element={<Error />} />
     </Routes>
   );
